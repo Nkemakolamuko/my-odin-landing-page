@@ -1,0 +1,119 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.Hero {
+    background-color: #1F2937;
+    margin: 0;
+    padding: 10px 90px;
+    color: #F9FAF8;
+}
+
+.header {
+    background-color: #1F2937;
+    display: flex;
+    /* position: fixed; */
+    width: 100%;
+    height: 45px;
+    align-items: center;
+    gap: 150px;
+}
+
+.logo {
+    font-weight: 900;
+    background: linear-gradient(to right, #ff0000, #00ff00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.links {
+    display: flex;
+    font-size: small;
+}
+
+.links ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.links ul li {
+    list-style-type: none;
+    margin-right: 10px;
+    position: relative;
+}
+
+.links ul li a {
+    text-decoration: none;
+    color: aqua;
+}
+
+.links ul li:last-child {
+    margin-right: 0; /* Remove the margin for the last element */
+}
+
+.links ul li::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: blue; /* Adjust the color of the line */
+    transform: scaleX(0);
+    transition: transform 0.2s;
+}
+
+.links ul li:hover::after {
+    transform: scaleX(1);
+}
+
+
+/* ABOUT */
+.About {
+    display: flex;
+    justify-content: space-between;
+    /* height: 300px; */
+    gap: 35px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+  /* SPlitting content */
+.Left-About, .Right-About {
+    flex-basis: 50%;
+}
+
+.Left-About > p {
+    font-size: small;
+}
+
+/* Button */
+.Learn-more {
+    display: flex;
+}
+
+.Learn-more > button {
+    height: 40px;
+    width: 150px;
+    border-radius: 5px;
+    border: none;
+    background-color: aqua;
+}
+
+.Learn-more > button > a {
+    text-decoration: none;
+}
+
+/* Image */
+.Right-About {
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: center;
+}
+.Right-About > img {
+    height: 250px;
+    width: 300px;
+    border-radius: 10px;
+}
