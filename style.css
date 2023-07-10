@@ -12,6 +12,7 @@ body {
 
 .header {
     /* background-color: #1F2937; */ 
+    margin-top: 20px;
     display: flex;
     position: fixed;
     /* width: 100%; */
@@ -76,7 +77,7 @@ body {
     justify-content: space-between;
     /* height: 300px; */
     gap: 35px;
-    margin-top: 20px;
+    margin-top: 45px;
     margin-bottom: 40px;
 }
   /* SPlitting content */
