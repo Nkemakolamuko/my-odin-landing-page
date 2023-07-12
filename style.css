@@ -11,12 +11,12 @@ body {
 }
 
 .header {
-    /* background-color: #1F2937; */ 
+    /* background-color: #1F2937;  */
     margin-top: 20px;
     display: flex;
     position: fixed;
     /* width: 100%; */
-    /* height: 45px; */
+    /* height: 60px; */
     align-items: center;
     gap: 165px; /*increased after last git push*/
 }
@@ -31,6 +31,7 @@ body {
 .links {
     display: flex;
     font-size: small;
+    flex-shrink: 1; /*new mod */
 }
 
 .links ul {
