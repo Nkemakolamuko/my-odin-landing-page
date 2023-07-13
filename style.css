@@ -6,7 +6,7 @@ body {
 .Hero {
     background-color: #1F2937;
     margin: 0;
-    padding: 10px 90px;
+    /* padding: 10px 90px; */
     color: #F9FAF8;
 }
 
@@ -16,7 +16,7 @@ body {
     display: flex;
     position: fixed;
     width: 100%;
-    height: 65px;
+    height: 70px;
     align-items: center;
     gap: 165px; /*increased after last git push*/
 }
@@ -26,14 +26,15 @@ body {
     background: linear-gradient(to right, #ff0000, #00ff00);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    margin-top: 20px;
+    margin-top: 13px;
+    padding-left: 90px;
 }
 
 .links {
     display: flex;
     font-size: small;
     flex-shrink: 1; /*new mod */
-    margin-top: 20px;
+    margin-top: 14px;
 }
 
 .links ul {
@@ -81,7 +82,8 @@ body {
     /* height: 300px; */
     gap: 35px;
     margin-top: 45px;
-    margin-bottom: 40px;
+    margin-bottom: 45px;
+    padding: 10px 90px; /* general padding*/
 }
   /* SPlitting content */
 .Left-About, .Right-About {
@@ -97,15 +99,16 @@ body {
     display: flex;
 }
 
-.Learn-more > button {
+.Learn-more > a > button {
     height: 40px;
     width: 150px;
     border-radius: 5px;
     border: none;
     background-color: aqua;
+    cursor: grab;
 }
 
-.Learn-more > button > a {
+.Learn-more > a {
     text-decoration: none;
 }
 
