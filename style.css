@@ -11,12 +11,12 @@ body {
 }
 
 .header {
-    /* background-color: #1F2937;  */
-    margin-top: 20px;
+    background-color: #1F2937; 
+    top: 0px;
     display: flex;
     position: fixed;
-    /* width: 100%; */
-    /* height: 60px; */
+    width: 100%;
+    height: 65px;
     align-items: center;
     gap: 165px; /*increased after last git push*/
 }
@@ -26,12 +26,14 @@ body {
     background: linear-gradient(to right, #ff0000, #00ff00);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    margin-top: 20px;
 }
 
 .links {
     display: flex;
     font-size: small;
     flex-shrink: 1; /*new mod */
+    margin-top: 20px;
 }
 
 .links ul {
