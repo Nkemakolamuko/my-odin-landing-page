@@ -129,19 +129,19 @@ body {
 
 /* SECTION 2 */
 .section-2 {
-    padding: 10px 90px;
+    padding: 10px 100px;
 }
 
 .section-2 > h1 {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 50px;
 }
 
 .cards {
     display: flex;
-    justify-content: space-between;
-
+    justify-content: space-around;
 }
 
 .card-1N {
@@ -161,9 +161,35 @@ body {
     display: block;
     /* align-items: center; */
     /* justify-content: center; */
+    /* filter: blur(10px); */
+    background-color: #f4f4f4;
     height: 150px;
-    width: 75px;
+    width: 95px;
     position: relative;
     border: 1px solid chartreuse;
     border-radius: 5px;
+    /* box-shadow: 0 2px 4px gray; */
+    box-shadow: inset 0 -10px 20px -10px gray;
+}
+
+.card-1 > h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1vw;
+    margin-top: 50%;
+    font-weight: 900;
+}
+
+
+/* QUOTE */
+.quote {
+    padding: 30px 90px;
+    background-color: #9ba1af;
+}
+
+.quote > div > p {
+    font-size: 15px;
+    /* font-weight: 900; */
+    font-style: italic;
 }
