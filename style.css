@@ -85,7 +85,7 @@ body {
     gap: 35px;
     margin-top: 60px;
     margin-bottom: 45px;
-    padding: 10px 90px; /* general padding*/
+    padding: 10px 85px; /* general padding*/
 }
   /* SPlitting content */
 .Left-About, .Right-About {
@@ -130,6 +130,7 @@ body {
 /* SECTION 2 */
 .section-2 {
     padding: 10px 100px;
+    margin-top: 30px;
 }
 
 .section-2 > h1 {
@@ -184,12 +185,106 @@ body {
 
 /* QUOTE */
 .quote {
-    padding: 30px 90px;
+    padding: 30px 95px;
     background-color: #9ba1af;
+    margin-top: 30px;
+    /* position: relative; */
 }
 
-.quote > div > p {
+/* .quoter::before {
+    content: "\201c"
+    font-size: 100px;
+    color: black;
+} */
+
+.quote-content {
+    margin-bottom: 30px;
+}
+
+.quote-content p {
     font-size: 15px;
     /* font-weight: 900; */
     font-style: italic;
+}
+
+.quoter {
+    font-weight: 900;
+    font-size: 1.1rem;
+    text-align: right;
+    /* float: left;
+    clear: both; */
+}
+
+.quoter::before {
+    content: "\2014\0020" /* for -- property */
+}
+
+.must-read {
+    font-weight: 900;
+}
+
+
+/* CALL TO ACTION */
+.action {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 85px;
+    margin-top: 30px;
+}
+
+.items {
+    border: 1px solid blue;
+    border-radius: 5px;
+    background-color: blue;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    gap: 50px;
+}
+
+.text > span {
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+
+.text p {
+    font-size: smaller;
+    font-weight: bolder;
+}
+
+.action-btn a {
+    text-decoration: none;
+}  
+
+.action-btn button {
+    border: 1px solid white;
+    background-color: blue;
+    color: white;
+    border-radius: 3px;
+    font-size: smaller;
+    font-weight: bolder;
+    width: 105px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: grab;
+    box-shadow: inset 0 -10px 20px -10px rgb(255, 81, 0);
+}
+
+
+/* FOOTER */
+.footer {
+    background-color: #1F2937;
+    margin-top: 30px;    
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
 }
